@@ -24,8 +24,8 @@ class App extends Component {
     else if (type === 1) this.setState({ surname: formData });
     else this.setState({ notes: formData });
 
-    this.setState({date: moment().format('dddd, MMMM Do YYYY')});
-    this.setState({time: moment().format('LT')});
+    this.setState({ date: moment().format('dddd, MMMM Do YYYY') });
+    this.setState({ time: moment().format('LT') });
   }
 
   render() {
@@ -33,12 +33,12 @@ class App extends Component {
       <div className="App">
         <form onSubmit={this.handleSubmit}>
           First name: <br />
-          <input type="text" onChange={event => this.handleChange(event, 0)} className = "firstname" /><br />
+          <input type="text" onChange={event => this.handleChange(event, 0)} className="firstname" /><br />
           Surname: <br />
-          <input type="text" onChange={event => this.handleChange(event, 1)} className = "surname" /><br />
+          <input type="text" onChange={event => this.handleChange(event, 1)} className="surname" /><br />
           Notes: <br />
-          <input type="input" name="notes" onChange={event => this.handleChange(event, 2)} className = "notes" /><br />
-          <input type="submit" value="Submit" className ="submit"/>
+          <input type="input" name="notes" onChange={event => this.handleChange(event, 2)} className="notes" /><br />
+          <input type="submit" value="Submit" className="submit" />
         </form>
       </div>
     );
