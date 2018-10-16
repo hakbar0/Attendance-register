@@ -13,7 +13,7 @@ class App extends Component {
   }
 
   handleSubmit() {
-
+    //todo push to db
   }
 
   handleChange(event, type) {
