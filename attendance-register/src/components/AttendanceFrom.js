@@ -20,8 +20,8 @@ class AttendanceForm extends Component {
             notes: this.state.notes,
             date: moment().format('dddd, MMMM Do YYYY'),
             time: moment().format('LT')
-        })
-    }
+        });
+    };
 
     handleChange(event, type) {
         event.preventDefault();
