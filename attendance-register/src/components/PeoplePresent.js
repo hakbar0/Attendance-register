@@ -33,8 +33,9 @@ class PeoplePresent extends Component {
                             </tr>
                             {
                                 Object.entries(this.state.currentPeoplePresent).reverse().map((person) => {
+                                    console.log(person[0]);
                                     return (
-                                        <tr className="currentPeoplePresent">
+                                        <tr className="currentPeoplePresent" key={person[0]}>
                                             <td>{person[1].firstname}</td>
                                             <td>{person[1].surname}</td>
                                             <td>{person[1].date}</td>
@@ -42,6 +43,7 @@ class PeoplePresent extends Component {
                                         </tr>
                                     );
                                 })
+                               
                             }
                         </tbody>
                     </table>
