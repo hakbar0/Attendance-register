@@ -22,7 +22,7 @@ class AttendanceForm extends Component {
                          <input type="radio" value="Remortgage" name="options" /> Remortgage
                   </div>
 
-                {this.state.option === "Buy" ? <Buy /> : null}
+                {this.state.option === "Buy" && <Buy /> }
             </div>
         );
     }
