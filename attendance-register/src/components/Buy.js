@@ -69,34 +69,34 @@ class Buy extends Component {
 
                     <div onChange={event => this.setState({ freeOrLease: event.target.value })}>
                         The property is: <br />
-                        <input type="radio" value="Freehold" name="options" /> Freehold
-                    <input type="radio" value="Leasehold" name="options" /> Leasehold
+                        <input type="radio" value="Freehold" name="freehold-or-leasehold" /> Freehold
+                    <input type="radio" value="Leasehold" name="freehold-or-leasehold" /> Leasehold
                 </div>
 
                     <div onChange={event => this.setState({ isMortgage: event.target.value })}>
                         Buying with a Mortgage? <br />
-                        <input type="radio" value="True" name="options" /> Yes
-                    <input type="radio" value="False" name="options" /> No
+                        <input type="radio" value="True" name="is-mortgage" /> Yes
+                    <input type="radio" value="False" name="is-mortgage" /> No
                 </div>
 
                     <div onChange={event => this.setState({ isSecondOrInvestment: event.target.value })}>
                         Is this a second or investment property purchase? <br />
-                        <input type="radio" value="True" name="options" /> Yes
-                    <input type="radio" value="False" name="options" /> No
+                        <input type="radio" value="True" name="is-second-or-investment" /> Yes
+                    <input type="radio" value="False" name="is-second-or-investment" /> No
                 </div>
 
                     <div onChange={event => this.setState({ propertyLocation: event.target.value })}>
                         Where is your property located? <br />
-                        <input type="radio" value="England" name="options" /> England
-                    <input type="radio" value="Wales" name="options" /> Wales
+                        <input type="radio" value="England" name="location" /> England
+                    <input type="radio" value="Wales" name="location" /> Wales
                 </div>
 
                     <div onChange={event => this.setState({ isFirstTimeBuyer: event.target.value })}>
                         Are you a first time buyer? <br />
-                        <input type="radio" value="True" name="options" /> Yes
-                    <input type="radio" value="False" name="options" /> No
+                        <input type="radio" value="True" name="buyer" /> Yes
+                    <input type="radio" value="False" name="buyer" /> No
                 </div>
-                    <input type="submit" value="Submit" className="submit" />
+                    <input type="submit" value="Get Quote" className="submit" />
                 </form>
             </div>
         );
