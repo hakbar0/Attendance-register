@@ -39,6 +39,7 @@ class Buy extends Component {
     }
 
     render() {
+        console.log(this.state);
         return (
             <div>
                 <form onSubmit={this.handleSubmit.bind(this)}>
@@ -58,7 +59,7 @@ class Buy extends Component {
                     <input type="text" onChange={event => this.setState({ number: event.target.value })} className="surname" />
                     <br />
 
-                    <div onChange={event => this.setState({ callBack: event.target.value })}>
+                    <div onChange={event => this.setState({ callBack: event.target.checked })}>
                         Would you like to be connected by phone? <br />
                         <input type="Checkbox" name="Contact" />
                     </div>
