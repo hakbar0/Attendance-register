@@ -8,7 +8,6 @@ class AttendanceForm extends Component {
     };
 
     setOption(event) {
-        event.preventDefault();
         this.setState({ option: event.target.value });
     }
 
