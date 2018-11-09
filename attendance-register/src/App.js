@@ -1,17 +1,19 @@
 import React, { Component } from 'react';
 import './App.css';
 import { BrowserRouter, Route, Switch } from 'react-router-dom';
-import AttendanceForm from './components/AttendanceFrom';
-import PeoplePresent from './components/PeoplePresent';
+import Home from './components/Home';
+import Navbar from './components/Navbar';
 
 class App extends Component {
   render() {
     return (
       <BrowserRouter>
+      <div className="App">
+      <Navbar />
         <Switch>
-          <Route exact path="/attendance-form" component={AttendanceForm} />
-          <Route exact path="/people-present" component={PeoplePresent} />
+          <Route exact path="/" component={Home} />
         </Switch>
+        </div>
       </BrowserRouter>
     );
   }
