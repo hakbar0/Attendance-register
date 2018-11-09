@@ -24,4 +24,39 @@ function isEmailValid(email) {
     return isValid;
 }
 
+function isNumberValid(){
+    let isValid = false;
+    return isValid;
+}
+
+function isBuyingPriceValid(){
+    let isValid = false;
+    return isValid;
+}
+
+function isFreeOrLease(){
+    let isValid = false;
+    return isValid;
+}
+
+function isMortgageValid(){
+    let isValid = false;
+    return isValid;
+}
+
+function isSecondOrInvestmentValid(){
+    let isValid = false;
+    return isValid;
+}
+
+function isPropertyLocation(){
+    let isValid = false;
+    return isValid;
+}
+
+function isFirstTimeBuyer(){
+    let isValid = false;
+    return isValid;
+}
+
 export default validate;
